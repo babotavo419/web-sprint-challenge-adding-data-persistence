@@ -1,5 +1,5 @@
 // build your `Project` model here
-const db = require('../../data/db-config');
+const db = require('../../data/dbConfig');
 
 function get() {
   return db('projects').select('project_id', 'project_name', 'project_description', 'project_completed')
